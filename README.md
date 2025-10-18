@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie Recommender
+
+A Netflix-style movie recommendation platform built with Next.js, featuring movie recommendations, trailers, and a sleek UI.
+
+## Features
+
+- 🎬 Movie recommendations based on user input
+- 🎥 Movie trailers and previews
+- 🎯 Responsive Netflix-style UI
+- 🚀 Fast and efficient API integration
+
+## Prerequisites
+
+Before you begin, you need to:
+
+1. Subscribe to the [Movie Recommender API on RapidAPI](https://rapidapi.com/abhishekgawande1667/api/movie-recommender-api)
+2. Get your RapidAPI key from your RapidAPI dashboard
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/gawandeabhishek/movie-recommender.git
+cd movie-recommender
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+
+```bash
+# Copy the example environment file
+cp .env.example .env
+```
+
+4. Configure your environment:
+
+   - Open the `.env` file
+   - Replace `your_rapidapi_key_here` with your actual RapidAPI key
+   - The `RAPIDAPI_HOST` should already be set correctly
+
+5. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API Integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses the [Movie Recommender API](https://rapidapi.com/abhishekgawande1667/api/movie-recommender-api) for fetching movie recommendations. To use this API:
+
+1. Sign up on [RapidAPI](https://rapidapi.com)
+2. Subscribe to the [Movie Recommender API](https://rapidapi.com/abhishekgawande1667/api/movie-recommender-api)
+3. Get your API key from the RapidAPI dashboard
+4. Add your API key to the `.env` file
+
+## Environment Variables
+
+The following environment variables are required:
+
+- `RAPIDAPI_KEY`: Your RapidAPI key
+- `RAPIDAPI_HOST`: The API host (default: movie-recommender-api.p.rapidapi.com)
+
+Make sure to:
+
+- Never commit your `.env` file to version control
+- Use `.env.example` as a template for required environment variables
+- Add these environment variables to your hosting platform when deploying
+
+## Deployment
+
+The easiest way to deploy is using the [Vercel Platform](https://vercel.com/new). When deploying:
+
+1. Add the required environment variables in your Vercel project settings
+2. Deploy your project
+3. Your movie recommender will be live!
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Movie Recommender API Documentation](https://rapidapi.com/abhishekgawande1667/api/movie-recommender-api)
+- [RapidAPI Getting Started Guide](https://rapidapi.com/getting-started)
